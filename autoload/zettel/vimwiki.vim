@@ -114,6 +114,7 @@ endfunction
 function! zettel#vimwiki#template(title, date)
   call <sid>add_line(s:header_delimiter)
   call <sid>add_to_header("date", a:date)
+  call <sid>add_to_header("tags", '')
   call <sid>add_to_header("title", a:title)
   call <sid>add_line(s:header_delimiter)
 endfunction
